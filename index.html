@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>weather for you <3</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/auroral.css"/>
+	<!-- fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<body>
+
+	<div class="container">
+    	<div class="auroral-northern"></div>
+    	<div class="auroral-stars"></div>
+    
+
+
+<div class="first_page">
+	<div class="logo animated fadeInDown">
+		<img src="img/temperature.svg">
+	</div>
+
+	<form id="form">
+		<label for="city">City</label><br>
+		<input id="city" type="text" name="city" placeholder="Enter your city">
+		<br>
+		<label for="country">Country</label><br>
+		<input id="country" type="text" name="city" placeholder="Enter your country">
+		<br>
+		<input class="btn" type="submit" name="" value="enter" id="submit">
+	</form>
+
+	<div class="popular_city">
+		<a class="weather_link" href="#" data-city="kiev" data-country="ua">Kyiv</a>
+		<a class="weather_link" href="#" data-city="Mykolaiv" data-country="ua">Mykolaiv</a>
+		<a class="weather_link" href="#" data-city="new york" data-country="usa">New York</a>
+	</div>
+
+	<div class="weather_wrapper">
+		<h2 class="weather_city"></h2><br>
+		<h3 class="weather_description"></h3><br>
+		<p class="weather_temperature"></p><br>
+		<img class="weather_icon" src="">
+	</div>
+
+</div>
+
+</div>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+
+	<!-- <script src="jquery.backgroundvideo.min.js"></script> -->
+
+	<!-- 	<script>
+		  $(document).ready(function() {
+		    var videobackground = new $.backgroundVideo($('body'), {
+		      "align": "centerXY",
+		      "width": 1280,
+		      "height": 720,
+		      "path": "media/",
+		      "filename": "cloud",
+		      "types": ["mp4","ogg","webm"],
+		      "preload": false,
+		      "autoplay": true,
+		      "loop": true
+		    });
+		  });
+		</script> -->
+
+</body>
+</html>

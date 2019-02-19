@@ -1,0 +1,284 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	
+}
+
+.first_page {
+	width: 600px;
+	height: 700px;
+	background-image: linear-gradient(to right, #81ecec, #74b9ff);
+	opacity: 0.8;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+}
+
+#form {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+label {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: white;
+}
+
+input {
+	padding-left: 10px;
+}
+
+#city, #country, #submit {
+	display: flex;
+	justify-content: center;
+	width: 300px;
+	height: 30px;
+	border-radius: 4px;
+	border: none;
+	font-size: 18px;
+}
+
+.popular_city {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.popular_city a {
+	text-decoration: none;
+	color: #434A5C;
+	padding-right: 30px;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.popular_city a:hover {
+	color: white;
+}
+
+.popular_city a:last-child {
+	padding-right: 0;
+}
+
+.logo {
+	margin: 20px auto;
+	width: 100px;
+	height: 100px;
+}
+
+#submit {
+	width: 300px;
+	height: 30px;
+	padding-left: 0;
+	text-align: center;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	background-color: #434A5C;
+	color: white;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 0 2px 0 black;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+#submit:hover {
+	box-shadow: 0 0 2px 0 white;
+	cursor: pointer;
+}
+
+.weather_wrapper {
+	margin-top: 40px;
+	text-align: center;
+	line-height: 15px;
+}
+
+h2 {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+p {
+	margin-top: 10px;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+/* ipad pro */
+@media screen and (max-width: 1024px) {
+	.first_page {
+		width: 700px;
+		height: 700px;
+	}
+
+	label {
+		font-size: 22px;
+	}
+
+	#city, #country, #submit {
+		width: 400px;
+		height: 40px;
+		font-size: 22px;
+	}
+
+	.popular_city a {
+		font-size: 24px;
+	}
+
+	.weather_wrapper, h2, h3, p {
+		font-size: 26px;
+	}
+}
+
+
+/* ipad */
+
+@media screen and (max-width: 768px) {
+	.first_page {
+		width: 600px;
+		height: 700px;
+	}
+	
+	.logo {
+		margin-top: 40px;
+	}
+
+	label {
+		font-size: 18px;
+	}
+
+	#city, #country, #submit {
+		width: 400px;
+		height: 40px;
+		font-size: 18px;
+	}
+
+	.popular_city a {
+		font-size: 20px;
+	}
+
+	.weather_wrapper, h2, h3, p {
+		font-size: 22px;
+		line-height: 12px;
+	}
+}
+
+
+@media screen and (max-width: 596px) {
+	.first_page {
+		width: 100%;
+		height: 100%;
+		border-radius: 0;
+	}
+
+	label {
+		font-size: 16px;
+	}
+
+	#city, #country, #submit {
+		width: 400px;
+		height: 40px;
+		font-size: 16px;
+	}
+
+	.popular_city a {
+		font-size: 18px;
+	}
+
+	.weather_wrapper, h2, h3, p {
+		font-size: 22px;
+		line-height: 12px;
+	}
+}
+
+/* iphone 7 plus */
+@media screen and (max-width: 414px) {
+	.first_page {
+		width: 100%;
+		height: 100%;
+		border-radius: 0;
+	}
+	
+	.logo {
+		margin-top: 60px;
+	}
+
+	label {
+		font-size: 16px;
+	}
+
+	#city, #country, #submit {
+		width: 350px;
+		height: 35px;
+		font-size: 18px;
+	}
+
+	.popular_city a {
+		font-size: 20px;
+	}
+
+	.weather_wrapper, h2, h3, p {
+		font-size: 20px;
+		line-height: 7px;
+	}
+
+}
+
+
+/* iphone X */
+@media screen and (max-width: 375px) {
+	.first_page {
+		width: 100%;
+		height: 100%;
+		border-radius: 0;
+	}
+	
+	.logo {
+		margin-top: 100px;
+	}
+
+	label {
+		font-size: 16px;
+	}
+
+	#city, #country, #submit {
+		width: 320px;
+		height: 32px;
+		font-size: 16px;
+	}
+
+	.popular_city a {
+		font-size: 20px;
+	}
+
+	.weather_wrapper, h2, h3, p {
+		font-size: 20px;
+		line-height: 10px;
+	}
+
+}
